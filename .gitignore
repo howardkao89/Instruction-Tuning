@@ -1,0 +1,5 @@
+__pycache__
+adapter_checkpoint
+adapter_log
+Taiwan-LLM-7B-v2.0-chat
+*.docx

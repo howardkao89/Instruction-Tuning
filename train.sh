@@ -1,0 +1,14 @@
+python train.py \
+    --model_path ./Taiwan-LLM-7B-v2.0-chat \
+    --train_file ./data/train.json \
+    --test_file ./data/public_test.json \
+    --use_peft \
+    --batch_size 4 \
+    --gradient_accumulation_steps 16 \
+    --learning_rate 2e-4 \
+    --num_train_epochs 2 \
+    --seq_length 512 \
+    --peft_lora_r 64 \
+    --peft_lora_alpha 16 \
+    --peft_lora_dropout 0.05 \
+    --output_dir ./adapter_checkpoint
